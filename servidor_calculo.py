@@ -1,4 +1,3 @@
-# ---------- servidor_calculo.py ----------
 import zmq
 import json
 import time
