@@ -53,7 +53,9 @@ python3 broker_backup.py
 
 ## 3. Iniciar servidores
 python3 servidor_operacion1.py
+
 python3 servidor_operacion2.py
+
 python3 servidor_calculo.py
 
 ## 4. Iniciar cliente
