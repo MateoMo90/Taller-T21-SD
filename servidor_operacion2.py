@@ -1,4 +1,3 @@
-# ---------- servidor_operacion2.py ----------
 import zmq
 import json
 import time
