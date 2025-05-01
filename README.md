@@ -46,5 +46,15 @@ Este sistema implementa una arquitectura distribuida basada en el patrón **Publ
 > Ejecutar **cada componente en su máquina respectiva**, en el siguiente orden:
 
 ### 1. Iniciar broker principal
-```bash
 python3 broker.py
+
+## 2. Iniciar broker de respaldo
+python3 broker_backup.py
+
+## 3. Iniciar servidores
+python3 servidor_operacion1.py
+python3 servidor_operacion2.py
+python3 servidor_calculo.py
+
+## 4. Iniciar cliente
+python3 cliente.py
