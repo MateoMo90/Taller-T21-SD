@@ -1,4 +1,3 @@
-# ---------- cliente.py ----------
 import zmq
 import time
 import json
