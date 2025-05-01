@@ -12,7 +12,7 @@ Este sistema implementa una arquitectura distribuida basada en el patrón **Publ
 | Broker principal         | `10.43.103.197`  | `broker.py`                      |
 | Cliente                  | `10.43.103.204`  | `cliente.py`                     |
 | Servidor de cálculo      | `10.43.103.30`   | `servidor_calculo.py`           |
-| Servidor de operación 1  | `10.43.103.30`   | `servidor_operacion1.py`        |
+| Servidor de operación 1  | `10.43.96.74`   | `servidor_operacion1.py`        |
 | Servidor de operación 2  | `10.43.103.102`  | `servidor_operacion2.py`        |
 | Broker de respaldo       | `10.43.103.30`   | `broker_backup.py`              |
 
