@@ -1,4 +1,3 @@
-# ---------- broker_backup.py (respaldo en pc3) ----------
 import zmq
 import time
 import threading
