@@ -1,11 +1,3 @@
-# Asignación de roles por IP:
-# pc1 (10.43.103.197): Broker principal
-# pc2 (10.43.103.204): Cliente
-# pc3 (10.43.103.30): Servidor de Cálculo + Broker de respaldo
-# pc4 (10.43.103.30): Servidor de Operación 1
-# pc5 (10.43.103.102): Servidor de Operación 2
-
-# ---------- broker.py (principal) ----------
 import zmq
 import time
 import threading
