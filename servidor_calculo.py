@@ -82,6 +82,8 @@ def servidor_calculo_resiliente():
             op2 = datos_guardados["op2"]
             resultado_final = calcular_operacion(intermedio, num3, op2)
             print("✅ Resultado final LOCAL:", resultado_final)
+            pub.send_string("solicitud/parcial1 " + json.dumps(contenido))
+
             estado = "idle"
 
         time.sleep(0.05)
