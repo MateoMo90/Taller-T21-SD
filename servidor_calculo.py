@@ -59,8 +59,10 @@ def servidor_calculo_resiliente():
                 pub.send_string("solicitud/parcial2 " + json.dumps(datos_guardados))
 
             elif topico == "respuesta/final" and estado == "esperando_parcial2":
-                print("✅ Recibida respuesta final:", contenido["total"])
-                estado = "idle"
+               print("✅ Resultado final LOCAL:", resultado_final)
+               pub.send_string("respuesta/final " + json.dumps({"total": resultado_final}))
+               estado = "idle"
+
 
         # TIMEOUT esperando parcial1
         if estado == "esperando_parcial1" and (now - tiempo_inicio > TIMEOUT):
@@ -82,8 +84,7 @@ def servidor_calculo_resiliente():
             op2 = datos_guardados["op2"]
             resultado_final = calcular_operacion(intermedio, num3, op2)
             print("✅ Resultado final LOCAL:", resultado_final)
-            pub.send_string("solicitud/parcial1 " + json.dumps(contenido))
-
+            
             estado = "idle"
 
         time.sleep(0.05)
