@@ -33,7 +33,7 @@ def client():
     print("Cliente: solicitud enviada")
 
     try:
-        sub.setsockopt(zmq.RCVTIMEO, 10000)
+        sub.setsockopt(zmq.RCVTIMEO, 20000)
         mensaje = sub.recv_string()
         print("Cliente recibió:", mensaje)
     except zmq.Again:
