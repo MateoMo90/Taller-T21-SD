@@ -13,7 +13,7 @@ def client():
     sub.connect("tcp://10.43.103.30:5556")
     sub.setsockopt_string(zmq.SUBSCRIBE, "respuesta/final")
 
-    time.sleep(1)
+    time.sleep(2)
 
     print("Ingrese tres números y dos operaciones (+, -, *, /):")
     num1 = float(input("Número 1: "))
