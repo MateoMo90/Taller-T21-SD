@@ -59,8 +59,10 @@ def servidor_calculo_resiliente():
                 pub.send_string("solicitud/parcial2 " + json.dumps(datos_guardados))
 
             elif topico == "respuesta/final" and estado == "esperando_parcial2":
-               print("✅ Resultado final LOCAL:", resultado_final)
-               pub.send_string("respuesta/final " + json.dumps({"total": resultado_final}))
+               resultado2 = contenido["total"]
+               resultado_final = resultado2
+               print("✅ Resultado final:", resultado_final)
+               pub.send_string("respuesta/final " + json.dumps(resultado_final))
                estado = "idle"
 
 
